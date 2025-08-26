@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IntelliParse - Document Ingestor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">IntelliParse</div>
+    <button class="contact-btn">Contact Us</button>
+</header>
+
+<main class="main-content">
+    <form id="ingestorForm" class="upload-container">
+        <h1>Upload Here</h1>
+        <p class="subtitle">For testing purposes, 5 MB limit per file.</p>
+        <p class="subtitle">Accepted files are .csv, .pdf, .png, .jpg</p>
+        
+        <label for="fileInput" class="drop-zone">
+            <input type="file" id="fileInput" multiple hidden accept=".csv,.pdf,.png,.jpg,.jpeg">
+            <p>Drag & drop documents here, or click to browse</p>
+        </label>
+        
+        <div id="fileListContainer" class="file-list-container">
+            <ul id="fileList"></ul>
+        </div>
+
+        <div class="form-fields">
+            <div class="form-group"><input type="text" id="firstName" placeholder="First Name" required disabled></div>
+            <div class="form-group"><input type="text" id="lastName" placeholder="Last Name" required disabled></div>
+            <div class="form-group"><input type="email" id="email" placeholder="Email" required disabled></div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required disabled>
+            </div>
+            <div class="form-group">
+                <input type="password" id="passwordConfirmation" placeholder="Confirm Password" required disabled>
+            </div>
+            <div id="passwordError" class="error-message"></div>
+        </div>
+
+        <button type="submit" id="submitBtn" style="all:unset; display:inline-block; cursor:pointer; overflow:hidden;" disabled>
+            <img src="SUBMIT.png" alt="Logo" style="display:block; width:350px; height:auto;">
+        </button>
+    </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
