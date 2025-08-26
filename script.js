@@ -138,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const finalData = await response2.json();
             console.log('✅ Process Complete!', finalData);
-            alert('Files Uploaded successfully, redirecting to the IntelliParse Application');
             window.location.href = "https://aiagents.slingrs.io/dev/runtime";
             //window.location.href = "https://aiagents.slingrs.io/prod/runtime";
         } catch (error) {
