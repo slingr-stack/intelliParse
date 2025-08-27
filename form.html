@@ -1,0 +1,53 @@
+<main
+  style="display:flex;justify-content:center;align-items:flex-start;
+         padding:0 24px 24px 24px;
+         font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+         color:#F3F4F6;margin:0;cursor:auto;">
+  <form id="ingestorForm" class="upload-container"
+    style="background-color:#121314;
+           padding:32px;
+           border-radius:16px;
+           max-width:360px;
+           width:100%;
+           box-shadow:0 12px 30px rgba(0,0,0,0.45);
+           text-align:center;
+           font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+           padding-bottom:40px;cursor:auto;">
+    <h1 style="font-size:36px;font-weight:400;margin:0 0 16px 0;color:#fff;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">Upload Here</h1>
+    <p class="subtitle" style="font-size:13px;color:#9CA3AF;line-height:1.5;margin:0 0 6px;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">For testing purposes, 5 MB limit per file.</p>
+    <p class="subtitle" style="font-size:13px;color:#9CA3AF;line-height:1.5;margin:0 0 6px;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">Accepted files are .csv, .pdf, .png, .jpg</p>
+
+    <label for="fileInput" class="drop-zone" style="display:flex;align-items:center;justify-content:center;height:92px;background-color:#0E0F11;border:1px dashed #2A2E33;border-radius:12px;margin:16px 0;cursor:pointer;transition:background-color 0.25s ease;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">
+      <input type="file" id="fileInput" multiple hidden accept=".csv,.pdf,.png,.jpg,.jpeg">
+      <p style="padding-left:18px;padding-right:18px;font-size:13px;color:#9CA3AF!important;text-decoration:none!important;margin:0;font-weight:400!important;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">Drag & drop documents here, or click to browse</p>
+    </label>
+
+    <div id="fileListContainer" class="file-list-container" style="margin:8px 0 0;">
+      <ul id="fileList" style="list-style:none;padding:0;margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;"></ul>
+    </div>
+
+    <div class="form-fields" style="margin-top:12px;">
+      <div class="form-group" style="margin-bottom:10px;">
+        <input type="text" id="firstName" placeholder="First Name" required disabled style="width:100%;padding:12px 14px;background-color:#0E0F11;border:1px solid #2A2E33;border-radius:8px;color:#fff;font-size:14px;outline:none;opacity:0.6;cursor:default!important;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;"/>
+      </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <input type="text" id="lastName" placeholder="Last Name" required disabled style="width:100%;padding:12px 14px;background-color:#0E0F11;border:1px solid #2A2E33;border-radius:8px;color:#fff;font-size:14px;outline:none;opacity:0.6;cursor:default!important;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;"/>
+      </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <input type="email" id="email" placeholder="Email" required disabled style="width:100%;padding:12px 14px;background-color:#0E0F11;border:1px solid #2A2E33;border-radius:8px;color:#fff;font-size:14px;outline:none;opacity:0.6;cursor:default!important;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;"/>
+      </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <input type="password" id="password" placeholder="Password" required disabled style="width:100%;padding:12px 14px;background-color:#0E0F11;border:1px solid #2A2E33;border-radius:8px;color:#fff;font-size:14px;outline:none;opacity:0.6;cursor:default!important;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;"/>
+      </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <input type="password" id="passwordConfirmation" placeholder="Confirm Password" required disabled style="width:100%;padding:12px 14px;background-color:#0E0F11;border:1px solid #2A2E33;border-radius:8px;color:#fff;font-size:14px;outline:none;opacity:0.6;cursor:default!important;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;"/>
+      </div>
+      <div id="passwordError" class="error-message" style="color:#ef4444;font-size:12px;margin-top:-6px;margin-bottom:10px;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;"></div>
+    </div>
+
+    <button id="submitBtn" type="submit"
+      style="all:unset;display:inline-block;background-color:#16A34A;color:#0E0F11;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;font-size:15px;font-weight:600;text-align:center;margin-top:18px;padding:12px 24px;border-radius:8px;cursor:pointer;transition:background-color 0.25s ease, transform 0.2s ease;">
+      Submit
+    </button>
+  </form>
+</main>
