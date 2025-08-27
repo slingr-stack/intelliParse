@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const MAX_FILES = 5;
     const MAX_FILE_SIZE_MB = 5;
-    const ALLOWED_EXTENSIONS = ['csv', 'pdf', 'png', 'jpg', 'jpeg'];
+    const ALLOWED_EXTENSIONS = ['csv', 'pdf', 'png', 'jpg', 'jpeg', 'txt', 'xls', 'xlsx'];
 
     // This array will hold the File objects that have passed validation.
     let validatedFiles = [];
@@ -139,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const finalData = await response2.json();
             console.log('✅ Process Complete!');
-            alert('Files Uploaded successfully, redirecting to the IntelliParse Application');
             //window.location.href = "https://aiagents.slingrs.io/dev/runtime";
             window.location.href = "https://aiagents.slingrs.io/prod/runtime";
         } catch (error) {
